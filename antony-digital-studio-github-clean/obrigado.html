@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#05070c" />
+  <title>Pedido preparado | Antony Digital Studio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-ads.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .thanks-page{min-height:100vh;display:grid;place-items:center;padding:100px 20px;background:radial-gradient(circle at 50% 20%,rgba(0,102,255,.18),transparent 34%)}
+    .thanks-card{width:min(760px,100%);text-align:center;border:1px solid rgba(40,125,255,.28);border-radius:28px;padding:56px 36px;background:linear-gradient(145deg,rgba(10,18,32,.96),rgba(3,7,13,.96));box-shadow:0 40px 120px rgba(0,0,0,.45)}
+    .thanks-mark{width:76px;height:76px;border-radius:22px;display:grid;place-items:center;margin:0 auto 28px;background:linear-gradient(135deg,#e3bd67,#9c6d1e);color:#090704;font:800 27px/1 Space Grotesk;box-shadow:0 18px 55px rgba(201,154,61,.3)}
+    .thanks-card h1{font:700 clamp(42px,7vw,68px)/.98 Space Grotesk;letter-spacing:-.045em}.thanks-card h1 span{color:#2183ff}.thanks-card p{max-width:590px;margin:22px auto 0;color:#9aa7b8;line-height:1.75}.thanks-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:32px}.thanks-note{display:block;color:#67768b;font-size:11px;margin-top:22px}
+    @media(max-width:520px){.thanks-card{padding:42px 22px}.thanks-actions .btn{width:100%}}
+  </style>
+</head>
+<body>
+  <div class="noise"></div><div class="orb orb-1"></div><div class="orb orb-2"></div>
+  <main class="thanks-page">
+    <section class="thanks-card">
+      <div class="thanks-mark">ADS</div>
+      <div class="eyebrow" style="justify-content:center"><span></span> ORÇAMENTO</div>
+      <h1>Seu pedido está <span>preparado.</span></h1>
+      <p id="thanksText">O WhatsApp foi aberto com sua mensagem organizada. Finalize o envio por lá e eu poderei analisar as informações do seu projeto.</p>
+      <div class="thanks-actions">
+        <a class="btn" href="https://wa.me/5582988200266" target="_blank" rel="noopener">Abrir WhatsApp ↗</a>
+        <a class="btn btn-ghost" href="index.html">Voltar ao site</a>
+      </div>
+      <small class="thanks-note">Antony Digital Studio • Sites autorais, modernos e responsivos.</small>
+    </section>
+  </main>
+  <script>
+    const n=sessionStorage.getItem('websitesQuoteName');
+    if(n){document.getElementById('thanksText').textContent=`${n}, o WhatsApp foi aberto com sua mensagem organizada. Finalize o envio por lá para que eu possa analisar as informações do seu projeto.`}
+  </script>
+</body>
+</html>
